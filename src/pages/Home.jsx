@@ -2,6 +2,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import gambar1 from "../img/k.jpg";
 import gambar2 from "../img/n.jpg";
+import { createProduk } from "../../service/getApi";
+import { useState } from "react";
+import axios from "axios";
 import "../style/Home.css";
 function Home() {
   const [post, setPost] = useState({
@@ -67,7 +70,7 @@ function Home() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: "100vh", // Memastikan elemen mengambil tinggi penuh viewport
+              height: "100vh",
             }}
           >
             <section
